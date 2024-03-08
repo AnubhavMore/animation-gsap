@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(255, 174, 0);
+    margin:0;
+    padding:0;
+    font-family: 'Rokkitt', serif;
+    overflow-x: hidden;
+}
+.hero-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    width:100%;
+     /* margin:0 auto;
+    border:2px solid red; */
+}
+.left{
+    position: relative;
+    left:-200%;
+    font-size: 100px;
+}
+.right {
+    position: relative;
+    left:200%;
+    font-size: 100px;
+}
+.marquee{
+    position: relative;
+    background: #0f0f0f;
+    color:rgb(252, 216, 139);
+    padding:30px 0;
+    font-weight: 600;
+    font-size:40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    /* border:2px solid white; */
+}
+.marquee_inner{
+    display:flex;
+    width:fit-content;
+    flex:auto;
+    flex-direction: row;
+}
+.marquee_part{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding:0 4px;
+}
+
+.hover-img{
+    background-color: #0f0f0f;
+    width:50%;
+    margin-top:100px;
+    position: relative;
+}
+.hover-text{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .2s;
+}
+
+.img{
+    width:100%;
+    height: 30rem;
+    
+    transition: opacity .5s ease-in-out;
+}
+.img:hover{
+    opacity: 0.5;
+}
+
+@media(max-width:680px){
+    body{
+        background-color:rgb(255, 174, 0) ;
+        scale: 1;
+    }
+    .left{
+        position: relative;
+        left:-200%;
+        font-size: 30px;
+    }
+    .right {
+        position: relative;
+        left:200%;
+        font-size: 30px;
+    }
+    .marquee{
+        position: relative;
+        background: #0f0f0f;
+        color:rgb(252, 216, 139);
+        padding:20px 0;
+        font-weight: 600;
+        font-size:20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        /* border:2px solid white; */
+    }
+    .marquee_inner{
+        display:flex;
+        width:fit-content;
+        flex:auto;
+        flex-direction: row;
+    }
+    .marquee_part{
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        padding:0 4px;
+    }
+
+}
